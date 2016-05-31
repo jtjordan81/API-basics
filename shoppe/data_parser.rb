@@ -8,7 +8,7 @@ class DataParser
   def initialize path
     @path = path
     @users = []
-    @data = JSON.parse(File.read path)
+    @data = path
     @items = []
   end
 

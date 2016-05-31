@@ -7,7 +7,7 @@ class TransactionParser
 
   def initialize path
     @path = path
-    @data = JSON.parse(File.read path)
+    @data = path
     @transaction = []
   end
 
