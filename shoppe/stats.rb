@@ -10,13 +10,13 @@ data = HTTParty.get(
         "https://shopnatra.herokuapp.com/data",
         query: {
           password: "hunter2"
-        }
+          }
         )
 trans = HTTParty.get(
         "https://shopnatra.herokuapp.com/transactions/06_13_81",
         query: {
           password: "hunter2"
-        }
+          }
         )
 
 
@@ -29,7 +29,6 @@ b = DataParser.new data
 p.parse!
 b.parse!
 
-binding.pry
 #* The user that made the most orders was __
 puts "Problem 1: The user that made the most orders was __"
 
