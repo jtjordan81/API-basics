@@ -13,7 +13,7 @@ data = HTTParty.get(
           }
         )
 trans = HTTParty.get(
-        "https://shopnatra.herokuapp.com/transactions/06_13_81",
+        "https://shopnatra.herokuapp.com/transactions/1981-06-13",
         query: {
           password: "hunter2"
           }
